@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APP KanBan</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lista de Tarefas</h1>
+    </div>
+
+    <div class="container columns">
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Para Fazer.</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Em Progresso.</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Revisar.</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+      <div class="column">
+        <div class="column-title">
+          <h3 data-tasks="0">Feito!</h3>
+          <button data-add><i class="bi bi-plus"></i></button>
+        </div>
+        <div class="tasks"></div>
+      </div>
+    </div>
+
+    <dialog class="confirm-modal">
+      <form method="dialog">
+        <h3>Deletar Tarefa?</h3>
+        <p>Tem certeza que deseja deletar a .ff tarefa?</p>
+        <div class="preview"></div>
+
+        <menu>
+          <button type="button" id="cancel">Cancelar</button>
+          <button type="submit" id="confirm">Sim, apagar!</button>
+        </menu>
+      </form>
+    </dialog>
+    <footer> © Desenvolvido por :: Guilherme Nunes, 2024. </footer>
+  </body>
+</html>
